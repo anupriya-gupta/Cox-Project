@@ -1,0 +1,90 @@
+---
+datacenter:
+  - cluster:
+      name: cluster-dcw-lnx-dev
+      environment: dev
+      ostype: linux
+      host: 
+        - name: host-dcw-lnx-dev-1
+        - name: host-dcw-lnx-dev-2
+        - name: host-dcw-lnx-dev-3
+        - name: host-dcw-lnx-dev-4
+        - name: host-dcw-lnx-dev-5
+      datastores:
+        - datastore: 
+            name: ds-lnx-dev-1
+            capacity: 8796093022208
+            freespace: 1854907772928
+            maintenancemode: no
+        - datastore:
+            name: ds-lnx-dev-2
+            capacity: 5717460467712
+            freespace: 2794586464256
+            maintenancemode: no
+        - datastore:
+            name: ds-lnx-dev-3
+            capacity: 4398046511104
+            freespace: 3610875461632
+            maintenancemode: no
+        - datastore:
+            name: ds-lnx-dev-4
+            capacity: 4398046511104
+            freespace: 3820875461632
+            maintenancemode: yes
+      networks:
+        - network:
+            name: 153_dev_pg_1
+            vlan: 5.4.1.0
+        - network:
+            name: 154_dev_pg_2
+            vlan: 5.4.5.0
+        - network:
+            name: 179_dev_pg_3
+            vlan: 5.4.9.0
+        - network:
+            name: 180_dev_pg_4
+            vlan: 5.4.18.0
+  - cluster:
+      name: cluster-dcw-win-qa
+      environment: qa
+      ostype: windows
+      host: 
+        - name: host-dcw-win-qa-1
+        - name: host-dcw-win-qa-2
+        - name: host-dcw-win-qa-3
+        - name: host-dcw-win-qa-4
+        - name: host-dcw-win-qa-5
+      datastores:
+        - datastore: 
+            name: ds-win-qa-1
+            capacity: 7311752327168
+            freespace: 3441869148160
+            maintenancemode: no
+        - datastore:
+            name: ds-win-qa-2
+            capacity: 9400824418304
+            freespace: 3651155738624
+            maintenancemode: no
+        - datastore:
+            name: ds-win-qa-3
+            capacity: 4398046511104
+            freespace: 3610875461632
+            maintenancemode: yes
+        - datastore:
+            name: ds-win-qa-4
+            capacity: 5277655814144
+            freespace: 4044135927808
+            maintenancemode: no
+      networks:
+        - network:
+            name: 8_qa_pg_1
+            vlan: 2.3.8.0
+        - network:
+            name: 52_qa_pg_2
+            vlan: 2.3.2.0
+        - network:
+            name: 53_qa_pg_3
+            vlan: 2.3.3.0
+        - network:
+            name: 129_qa_pg_4
+            vlan: 2.3.7.0
